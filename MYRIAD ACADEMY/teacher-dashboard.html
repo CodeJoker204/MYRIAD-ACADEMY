@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard | Myriad Academy</title>
+    <link rel="stylesheet" href="myriad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard">
+    <!-- Teacher Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="teacher-profile">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Teacher">
+                <h3>Mrs. Adekunle</h3>
+                <p>Mathematics Teacher</p>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> My Classes</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+                <li><a href="#"><i class="fas fa-clipboard-check"></i> Assessments</a></li>
+                <li><a href="#"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="myriad.html" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+                <h2>Teacher Dashboard</h2>
+            </div>
+            <div class="header-right">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">5</span>
+                </div>
+                <div class="user-menu">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <!-- Teacher Stats -->
+            <div class="stats-grid">
+                <div class="stat-card bg-primary">
+                    <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    <div class="stat-info">
+                        <h3>85</h3>
+                        <p>Total Students</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-success">
+                    <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    <div class="stat-info">
+                        <h3>4</h3>
+                        <p>Classes Teaching</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-warning">
+                    <div class="stat-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="stat-info">
+                        <h3>12</h3>
+                        <p>Pending Assignments</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-info">
+                    <div class="stat-icon"><i class="fas fa-calendar-day"></i></div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Classes Today</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Schedule -->
+            <div class="card today-schedule">
+                <div class="card-header">
+                    <h3><i class="fas fa-calendar-day"></i> Today's Schedule</h3>
+                    <div class="schedule-date">Monday, October 16, 2023</div>
+                </div>
+                <div class="card-body">
+                    <div class="schedule-item active">
+                        <div class="schedule-time">08:00 - 09:30</div>
+                        <div class="schedule-details">
+                            <h4>Mathematics - Basic 5A</h4>
+                            <p>Algebra: Quadratic Equations</p>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="#" class="btn btn-sm">Start Class</a>
+                        </div>
+                    </div>
+                    <!-- More schedule items... -->
+                </div>
+            </div>
+
+            <!-- Recent Assignments -->
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-tasks"></i> Recent Assignments</h3>
+                    <a href="#" class="btn btn-sm">Create New</a>
+                </div>
+                <div class="card-body">
+                    <div class="assignments-list">
+                        <div class="assignment-item">
+                            <div class="assignment-info">
+                                <h4>Algebra Homework</h4>
+                                <p>Basic 5A • Due: Oct 20, 2023</p>
+                                <div class="progress-container">
+                                    <div class="progress-bar" style="width: 65%"></div>
+                                    <span>65% Submitted (13/20)</span>
+                                </div>
+                            </div>
+                            <div class="assignment-actions">
+                                <a href="#" class="btn btn-sm btn-outline">Grade</a>
+                                <a href="#" class="btn btn-sm">View</a>
+                            </div>
+                        </div>
+                        <!-- More assignment items... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/MYRIAD ACADEMY/dashboard.js"></script>
+</body>
+</html>

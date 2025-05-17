@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Myriad Academy</title>
+    <link rel="stylesheet" href="myriad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dashboard">
+    <!-- Student Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="student-profile">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student">
+                <h3>David Johnson</h3>
+                <p>Basic 5A • Roll No: 15</p>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> My Courses</a></li>
+                <li><a href="#"><i class="fas fa-tasks"></i> Assignments</a></li>
+                <li><a href="#"><i class="fas fa-chart-line"></i> Performance</a></li>
+                <li><a href="#"><i class="fas fa-calendar"></i> Schedule</a></li>
+                <li><a href="#"><i class="fas fa-comments"></i> Messages</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <button onclick="back()"><a href="" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a></button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <button class="sidebar-toggle"><i class="fas fa-bars"></i></button>
+                <h2>Student Dashboard</h2>
+            </div>
+            <div class="header-right">
+                <div class="notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="badge">2</span>
+                </div>
+                <div class="user-menu">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                </div>
+            </div>
+        </header>
+
+        <div class="dashboard-content">
+            <!-- Student Overview -->
+            <div class="stats-grid">
+                <div class="stat-card bg-primary">
+                    <div class="stat-icon"><i class="fas fa-book"></i></div>
+                    <div class="stat-info">
+                        <h3>6</h3>
+                        <p>Current Courses</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-success">
+                    <div class="stat-icon"><i class="fas fa-tasks"></i></div>
+                    <div class="stat-info">
+                        <h3>3</h3>
+                        <p>Pending Assignments</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-info">
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="stat-info">
+                        <h3>2</h3>
+                        <p>Classes Today</p>
+                    </div>
+                </div>
+                
+                <div class="stat-card bg-warning">
+                    <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                    <div class="stat-info">
+                        <h3>84%</h3>
+                        <p>Overall Performance</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Classes -->
+            <div class="card today-classes">
+                <div class="card-header">
+                    <h3><i class="fas fa-calendar-day"></i> Today's Classes</h3>
+                </div>
+                <div class="card-body">
+                    <div class="class-item next">
+                        <div class="class-time">10:00 - 11:30</div>
+                        <div class="class-details">
+                            <h4>Mathematics</h4>
+                            <p>Room: B5 • Teacher: Mrs. Adekunle</p>
+                            <div class="class-topic">Topic: Quadratic Equations</div>
+                        </div>
+                        <div class="class-action">
+                            <a href="#" class="btn btn-sm">Join Class</a>
+                        </div>
+                    </div>
+                    <!-- More class items... -->
+                </div>
+            </div>
+
+            <!-- Pending Assignments -->
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-tasks"></i> Pending Assignments</h3>
+                    <a href="#" class="btn btn-sm">View All</a>
+                </div>
+                <div class="card-body">
+                    <div class="assignments-list">
+                        <div class="assignment-item urgent">
+                            <div class="assignment-info">
+                                <h4>Algebra Homework</h4>
+                                <div class="assignment-meta">
+                                    <span><i class="fas fa-book"></i> Mathematics</span>
+                                    <span><i class="fas fa-clock"></i> Due: Tomorrow</span>
+                                </div>
+                            </div>
+                            <div class="assignment-actions">
+                                <a href="#" class="btn btn-sm">Submit</a>
+                            </div>
+                        </div>
+                        <!-- More assignment items... -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Grades -->
+            <div class="card">
+                <div class="card-header">
+                    <h3><i class="fas fa-award"></i> Recent Grades</h3>
+                </div>
+                <div class="card-body">
+                    <div class="grades-list">
+                        <div class="grade-item">
+                            <div class="grade-subject">Mathematics</div>
+                            <div class="grade-score">85%</div>
+                            <div class="grade-comment">Excellent work!</div>
+                        </div>
+                        <!-- More grade items... -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/MYRIAD ACADEMY/dashboard.js"></script>
+</body>
+</html>

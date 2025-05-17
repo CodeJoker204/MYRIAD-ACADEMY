@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Login | Myriad Academy</title>
+    <link rel="stylesheet" href="myriad.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Teacher Portal</h2>
+                <p>Access your teaching dashboard</p>
+            </div>
+            <form class="login-form" id="teacherLoginForm">
+              <div class="form-group">
+                  <label for="teacher-email">Staff ID</label>
+                  <input type="text" id="teacher-email" name="staff_id" required
+                         placeholder="Enter staff ID" pattern="STAFF-\d{4}">
+                  <div class="error-message" id="teacher-id-error"></div>
+              </div>
+                <div class="form-group">
+                    <label for="teacher-password">Password</label>
+                    <input type="password" id="teacher-password" placeholder="Enter password">
+                    <div class="password-options">
+                        <label class="remember-me">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block" onclick="Teacher()">Sign In</button>
+                <div class="login-footer">
+                    <p>New teacher? <a href="#">Request account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/MYRIAD ACADEMY/login-validation.js"></script>
+</html>
